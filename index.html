@@ -1,0 +1,290 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Movie Design</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">Netflix</h1>
+            </div>
+
+            <div class="menu-container">
+                <div class="filter-box">
+                    <ul class="menu-list">
+                    <a href="#" class="btn" data-filter="all">All</a>
+                    <a href="#" class="btn" data-filter="Action">Action</a>
+                    <a href="#" class="btn" data-filter="Horror">Horror</a>
+                    <a href="#" class="btn" data-filter="drama">Drama</a>
+                    <a href="#" class="btn" data-filter="comedie">Comedie</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="profile-container">
+                
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="container">
+        
+       
+        <div class="content-container">
+    
+            <div class="movie-list-container">
+               <div class="movie-title">
+
+                   <h1 class="movie-list-title">Movie</h1>
+                   <input class="searchMovie" type="search" id="myInput" onkeyup="searchMovie()"  placeholder="Search movie..">
+                </div>
+                
+                
+                <div class="movie-list-wrapper">
+                <ul id="myUL">
+                    <div class="movie-list">
+                        <li>
+                        <div class="movie-list-item">
+                            <h2>Action</h2>
+                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
+                            <span class="movie-list-item-title">Red Notice</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.At
+                                hic fugit similique accusantium. </p>
+                            <p class="movie-list-item-year">2021</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="movie-list-item">
+                            <h2>Action</h2>
+                            <img class="movie-list-item-img" src="img/2.jpg" alt="">
+                            <span class="movie-list-item-title">Joker</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                                <p class="movie-list-item-year">2020</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="movie-list-item">
+                            <h2>Horror</h2>
+                            <img class="movie-list-item-img" src="img/3.jpg" alt="">
+                            <span class="movie-list-item-title">Inheritance</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                                <p class="movie-list-item-year">2019</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="movie-list-item">
+                            <h2>Drama</h2>
+                            <img class="movie-list-item-img" src="img/4.jfif" alt="">
+                            <span class="movie-list-item-title">Immortal</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                                <p class="movie-list-item-year">2018</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="movie-list-item">
+                            <h2>Comedie</h2>
+                            <img class="movie-list-item-img" src="img/5.jfif" alt="">
+                            <span class="movie-list-item-title">Singur acasa</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                                <p class="movie-list-item-year">2010</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="movie-list-item">
+                            <h2>Horror</h2>
+                            <img class="movie-list-item-img" src="img/6.jfif" alt="">
+                            <span class="movie-list-item-title">Nomis</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                                <p class="movie-list-item-year">2021</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="movie-list-item">
+                            <h2>Drama</h2>
+                            <img class="movie-list-item-img" src="img/7.jfif" alt="">
+                            <span class="movie-list-item-title">Pallen</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                                <p class="movie-list-item-year">2001</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </li>
+                    </div>
+                </ul>
+                <i class="fas fa-chevron-right arrow"></i>
+                </div>
+
+
+                    
+                </div>
+            </div>
+
+            
+
+            <div class="movie-list-container">
+                <div class='movie-title'>
+                    <h1 class="movie-list-title">Serials</h1>
+                    <input type="search" id="mySerials" onkeyup="searchSerials()" placeholder="Search serial..">
+                </div>
+                <div class="movie-list-wrapper">
+                    <ul id="myULSerials">
+                        <div class="movie-list">
+                        <li>
+                        <div class="movie-list-item">
+                            <h2>Horror</h2>
+                            <img class="movie-list-item-img" src="img/8.jfif" alt="">
+                            <span class="movie-list-item-title">It</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                                <p class="movie-list-item-year">2008</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="movie-list-item">
+                            <h2>Drama</h2>
+                            <img class="movie-list-item-img" src="img/9.jfif" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                                <p class="movie-list-item-year">2008</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="movie-list-item">
+                            <h2>Action</h2>
+                            <img class="movie-list-item-img" src="img/10.jpg" alt="">
+                            <span class="movie-list-item-title">Batman</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                                <p class="movie-list-item-year">2021</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="movie-list-item">
+                            <h2>Comedy</h2>
+                            <img class="movie-list-item-img" src="img/11.jpg" alt="">
+                            <span class="movie-list-item-title">Spider-man</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                                <p class="movie-list-item-year">2009</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="movie-list-item">
+                            <h2>Action</h2>
+                            <img class="movie-list-item-img" src="img/12.jpg" alt="">
+                            <span class="movie-list-item-title">Aquaman</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                                <p class="movie-list-item-year">2008</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="movie-list-item">
+                            <h2>Action</h2>
+                            <img class="movie-list-item-img" src="img/13.jpg" alt="">
+                            <span class="movie-list-item-title">Avengers</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                                <p class="movie-list-item-year">2021</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="movie-list-item">
+                            <h2>Comedy</h2>
+                            <img class="movie-list-item-img" src="img/14.jpg" alt="">
+                            <span class="movie-list-item-title">Ironman</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                                <p class="movie-list-item-year">2003</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </li>
+                    </div>
+                    </ul>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+
+            <table>
+                <tr>
+                    <td>
+                        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                            <div>
+                                <label class='label'>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                                <input type="text" name="fullName" id="fullName">
+                            </div>
+                            <div>
+                                <label class='label'>Year</label>
+                                <input type="text" name="year" id="year">
+                            </div>
+                            <div>
+                                <label class='label'>Rating</label>
+                                <input type="text" name="rating" id="rating">
+                            </div>
+                            <div>
+                                <label class='label'>Relase Date</label>
+                                <input type="text" name="relase" id="relase">
+                            </div>
+                            <div  class="form-action-buttons">
+                                <input id="submit" type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </td>
+                    <td>
+                        <table class="list" id="movieList">
+                            <thead>
+                                <tr>
+                                    <th>Full Name</th>
+                                    <th>Year </th>
+                                    <th>Rating</th>
+                                    <th>Relase date</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+        
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <script src="script.js"></script>
+            <script src="filter.js"></script>
+            <script src="app.js"></script>
+</body>
+
+</html>
